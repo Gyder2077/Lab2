@@ -9,8 +9,7 @@ public final class Iron_Defence extends StatusMove {
 
     @Override
     protected void applySelfEffects(Pokemon pok) {
-        Effect eff = new Effect().stat(Stat.DEFENSE, +2);
-        pok.addEffect(eff);
+        pok.setMod(Stat.DEFENSE, +2);
     }
 
     @Override

@@ -9,8 +9,7 @@ public class Leer extends StatusMove {
 
     @Override
     protected void applyOppEffects(Pokemon pok) {
-        Effect eff = new Effect().stat(Stat.DEFENSE, -1);
-        pok.addEffect(eff);
+        pok.setMod(Stat.DEFENSE, -1);
     }
 
     @Override

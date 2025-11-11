@@ -9,13 +9,13 @@ public final class Draco_Meteor extends SpecialMove {
 
     @Override
     protected void applySelfEffects(Pokemon pok) {
-        Effect eff = new Effect().stat(Stat.SPECIAL_ATTACK, -2);
-        pok.addEffect(eff);
+        pok.setMod(Stat.SPECIAL_ATTACK, -2);
+        System.out.println(pok.getStat(Stat.SPECIAL_ATTACK));
     }
 
 
     @Override
     protected String describe() {
-        return "бьет соперника лапой";
+        return "призывает метеор";
     }
 }

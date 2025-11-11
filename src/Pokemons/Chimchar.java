@@ -12,7 +12,6 @@ public class Chimchar extends Pokemon {
         Flame_Charge flameCharge = new Flame_Charge();
         Leer leer = new Leer();
 
-        super.addMove(flameCharge);
-        super.addMove(leer);
+        this.setMove(flameCharge, leer);
     }
 }

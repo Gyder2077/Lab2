@@ -1,6 +1,5 @@
 package Moves;
 
-
 import ru.ifmo.se.pokemon.*;
 
 public final class Flame_Charge extends PhysicalMove {
@@ -10,8 +9,7 @@ public final class Flame_Charge extends PhysicalMove {
 
     @Override
     protected void applySelfEffects(Pokemon pok) {
-        Effect eff = new Effect().stat(Stat.SPEED, +1);
-        pok.addEffect(eff);
+        pok.setMod(Stat.SPEED, +1);
     }
 
     @Override

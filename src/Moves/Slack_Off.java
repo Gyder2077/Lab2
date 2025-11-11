@@ -12,10 +12,10 @@ public final class Slack_Off extends StatusMove {
         double max_hp = pok.getStat(Stat.HP);
         double cur_hp = pok.getHP();
         double heal = max_hp * 0.5;
-        if (cur_hp >= heal) {
+        if (max_hp < cur_hp+heal) {
             pok.setMod(Stat.HP, -(int)heal);
         } else {
-            pok.setMod(Stat.HP, -(int)cur_hp);
+            pok.setMod(Stat.HP, -(int)(max_hp-cur_hp));
         }
     }
 

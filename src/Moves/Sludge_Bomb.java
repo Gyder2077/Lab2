@@ -17,6 +17,6 @@ public final class Sludge_Bomb extends SpecialMove {
 
     @Override
     protected String describe() {
-        return "использует шламовую бомба";
+        return "использует шламовую бомбу";
     }
 }

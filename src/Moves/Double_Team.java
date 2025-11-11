@@ -9,8 +9,7 @@ public final class Double_Team extends StatusMove {
 
     @Override
     protected void applySelfEffects(Pokemon pok) {
-        Effect eff = new Effect().stat(Stat.EVASION, +1);
-        pok.addEffect(eff);
+        pok.setMod(Stat.EVASION, +1);
     }
 
     @Override

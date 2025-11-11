@@ -6,15 +6,13 @@ import Moves.*;
 public class Sandygast extends Pokemon {
     public Sandygast(String name, int level) {
         super(name, level);
-        super.setType(Type.GHOST, Type.GROUND);
-        super.setStats(55, 55, 80, 70, 45, 15);
+        this.setType(Type.GHOST, Type.GROUND);
+        this.setStats(55, 55, 80, 70, 45, 15);
 
         Rock_Slide rockSlide = new Rock_Slide();
         Iron_Defence ironDefence = new Iron_Defence();
         Double_Team doubleTeam = new Double_Team();
 
-        super.addMove(rockSlide);
-        super.addMove(ironDefence);
-        super.addMove(doubleTeam);
+        this.setMove(rockSlide, ironDefence, doubleTeam);
     }
 }

@@ -6,11 +6,11 @@ import ru.ifmo.se.pokemon.*;
 public final class Infernape extends Monferno{
     public Infernape(String name, int level) {
         super(name, level);
-        super.setType(Type.FIRE, Type.FIGHTING);
-        super.setStats(76, 104, 71, 104, 71, 108);
+        this.setType(Type.FIRE, Type.FIGHTING);
+        this.setStats(76, 104, 71, 104, 71, 108);
 
         Poison_Jab poisonJab = new Poison_Jab();
 
-        super.addMove(poisonJab);
+        this.addMove(poisonJab);
     }
 }

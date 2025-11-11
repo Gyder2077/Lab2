@@ -6,7 +6,7 @@ public final class Poison_Jab extends PhysicalMove {
     public Poison_Jab() {
         super(Type.POISON, 80, 100);
     }
-    public boolean eff = false;
+    boolean eff = false;
 
     @Override
     protected void applyOppEffects(Pokemon pok) {
