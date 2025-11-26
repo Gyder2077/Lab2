@@ -10,7 +10,6 @@ public final class Draco_Meteor extends SpecialMove {
     @Override
     protected void applySelfEffects(Pokemon pok) {
         pok.setMod(Stat.SPECIAL_ATTACK, -2);
-        System.out.println(pok.getStat(Stat.SPECIAL_ATTACK));
     }
 
 
